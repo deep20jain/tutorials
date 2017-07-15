@@ -19,7 +19,7 @@ public class SpringRunner {
         System.out.println(toyota);
 
         Movie minions = getMovieFromJavaConfig();
-        
+
         System.out.println(minions);
     }
 
@@ -34,7 +34,7 @@ public class SpringRunner {
 
         return context.getBean(Car.class);
     }
-    
+
     private static Movie getMovieFromJavaConfig() {
         ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
 
